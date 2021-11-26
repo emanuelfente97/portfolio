@@ -1,0 +1,634 @@
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/images/background.jpeg.crdownload);
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+.navbar-brand {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  padding: 0.4% 4%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #253238;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999999999999999;
+  /* color: white; */
+}
+.navbar {
+  flex: 1;
+  text-align: center;
+  color: white;
+}
+.nav-cont ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+  color: #a3aab0;
+}
+.navbar ul li a {
+  color: #ffff;
+  text-decoration: none;
+  font-size: 15px;
+}
+.navbar ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: red;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.navbar ul li:hover::after {
+  width: 100%;
+  color: white;
+}
+.text-area {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.but {
+  display: inline-block;
+  /* padding: 10px 30px; */
+  text-decoration: none;
+  color: white;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 15px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  margin-top: 30px;
+  transition: 0.3s ease background-color;
+  height: 40px;
+  width: 200px;
+}
+
+.but:hover {
+  color: white;
+  background-color: rgb(231, 10, 10);
+}
+
+.about {
+  min-height: 100vh;
+  width: 100%;
+}
+.section {
+  padding: 100px 0;
+  position: relative;
+}
+section {
+  height: max-content;
+}
+.gray-bg {
+  background-color: #f5f5f5;
+}
+
+img {
+  vertical-align: middle;
+  width: 400px;
+  height: 400px;
+}
+/* About Me 
+---------------------*/
+.about-text h3 {
+  font-size: 45px;
+  font-weight: 700;
+  margin: 0 0 6px;
+  color: black;
+  border-bottom: 1px solid red;
+  border-bottom-width: 5px;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+@media (max-width: 767px) {
+  .about-text h3 {
+    font-size: 35px;
+  }
+}
+.about-text h6 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+  .about-text h6 {
+    font-size: 18px;
+  }
+}
+.about-text p {
+  font-size: 18px;
+  max-width: 450px;
+}
+.about-text p mark {
+  font-weight: 600;
+  color: #20247b;
+}
+
+.about-list {
+  padding-top: 10px;
+}
+.about-list .media {
+  padding: 5px 0;
+}
+.about-list label {
+  color: #20247b;
+  font-weight: 600;
+  width: 88px;
+  margin: 0;
+  position: relative;
+}
+.about-list label:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 11px;
+  width: 1px;
+  height: 12px;
+  background: #20247b;
+  -moz-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -webkit-transform: rotate(15deg);
+  transform: rotate(15deg);
+  margin: auto;
+  opacity: 0.5;
+}
+.about-list p {
+  margin: 0;
+  font-size: 15px;
+}
+
+@media (max-width: 991px) {
+  .about-pic {
+    margin-top: 30px;
+  }
+}
+
+.about-section .counter {
+  padding: 22px 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+}
+.about-section .counter .count-data {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.about-section .counter .count {
+  font-weight: 700;
+  color: #20247b;
+  margin: 0 0 5px;
+}
+.about-section .counter p {
+  font-weight: 600;
+  margin: 0;
+}
+mark {
+  background-image: linear-gradient(
+    rgba(252, 83, 86, 0.6),
+    rgba(252, 83, 86, 0.6)
+  );
+  background-size: 100% 3px;
+  background-repeat: no-repeat;
+  background-position: 0 bottom;
+  background-color: transparent;
+  padding: 0;
+  color: currentColor;
+}
+.theme-color {
+  color: #fc5356;
+}
+.dark-color {
+  color: #20247b;
+
+
+}
+/* Education and Work Background */
+#workEdu {
+  padding: 50px;
+  background-color: #253238;
+  color: #a3aab0;
+  max-height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.containerp {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.containerp::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.contentq {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .containerp {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .containerp::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+.carousel-img {
+  width: 40%;
+  border-radius: 100%;
+}
+
+/* Skills  */
+.skills {
+  color: #a3aab0;
+  height: max-content;
+  background:  black;
+  padding-bottom: 15%;
+}
+
+.progress {
+  margin-bottom: 20px;
+  height: 18px;
+  width: 100%;
+}
+
+.css {
+  background-color: red;
+  
+}
+.html {
+  background-color: red;
+}
+.javascript {
+  background-color: red;
+}
+/* Animation */
+.animatedname{
+  overflow: hidden; 
+  border-right: .15em solid orange; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+    animation-iteration-count: infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 35% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+.cards{
+  height: max-content;
+  width: 100%;
+  background: rgb(95, 86, 86);
+  padding-bottom: 100px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+/* Testimonials */
+
+.card-text{
+color: #ffffff;
+}
+.card-title{
+  color: #ffffff;
+}
+.card{
+  border-radius: 15px;
+  border-bottom-width: 50px;
+  border: purple;
+}
+.card-img-top{
+  border-radius: 15px;
+}
+.home-testimonial {
+  width: 100%;
+  height: max-content;
+  z-index: 93889729695634892684608;
+  padding-bottom: 50px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.testimonial-inner {
+  position: relative;
+  padding-top: 50px;
+}
+
+.testimonial-pos {
+  position: relative;
+  top: 24px;
+}
+
+.testimonial-inner .tour-desc {
+  border-radius: 5px;
+  padding: 40px; 
+}
+.tour-item {
+  height: 200%;
+  row-gap: 20px;
+
+}
+
+.color-grey-3 {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 14px;
+  color: #6c83a2;
+}
+
+.testimonial-inner img.tm-people {
+  width: 150px;
+  height: 150px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  max-width: none;
+}
+
+
+.link-name {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 14px;
+  color: #6c83a2;
+}
+
+.link-position {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 12px;
+  color: #6c83a2;
+}
+
+.contact {
+  background-color:rgb(95, 86, 86);
+  /* height: 80vh; */
+}
+.cont {
+  overflow-x: hidden;
+  background-color:rgb(95, 86, 86);
+  height: 100vh;
+  width: 100%;
+
+  /* height: 80vh; */
+}
+
+.msg-form {
+  background-color: white;
+  padding: 20px;
+}
+
+.pad-icon {
+  padding-top: 50px;
+  padding-left: 20px;
+}
+
+.pad-icon a {
+  text-decoration: none;
+  margin-right: 40px;
+}
+
+.input-group input:focus {
+  border: 1px solid blue;
+}
+
+.pad-icon a:active {
+  height: 30px;
+  width: 30px;
+  background-color: #0080ff;
+  border-radius: 100%;
+  padding: 10px;
+}
+
+.links {
+  padding-top: 50px;
+  width: 50%;
+}
+
+#bordering a:active {
+  border: 1px solid #0080ff;
+}
+
+
+@media (min-width: 568px) {
+  .cont {
+    /* margin: 100px 30px; */
+    width: 100%;
+    height: 70%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 567px) {
+  .cont {
+    /* margin: 10px 10px; */
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+  .pad {
+    padding-top: 20px;
+  }
+
+@media (max-width: 978px) {
+  .card {
+    column-gap: 100px;
+  }
+
+}
+@media (max-width: 768px) {
+.tour-item  {
+height: 450px;
+}
+}
+.tour-desc {
+  overflow-y: scroll;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  /* width: 5px; */
+  text-align: center;
+  text-decoration: none;
+  /* margin: 5px 2px; */
+  /* height: 5px; */
+}
+
+.media{
+  
+  align-items: center;
+  
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-github {
+  background: #3B5998;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  justify-content: center;
+}
+  .fa-netlify {
+    background: #55ACEE;
+    color: white;
+    border-radius: 50%
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
